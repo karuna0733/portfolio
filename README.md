@@ -43,7 +43,7 @@ To run this portfolio locally on your machine:
    ```
 
 2. **Open with Live Server or local browser:**
-   - Double-click `index.html` or `portfolio.html` to open directly in any standard browser.
+   - Double-click `index.html` to open directly in any standard browser.
    - Alternatively, use VS Code extension **Live Server** or run a simple local web server:
      ```bash
      npx serve .

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karunakaran A — Cybersecurity Analyst &amp; Ethical Hacker</title>
-  <meta name="description" content="Professional portfolio of Karunakaran A, a final-year CS Engineering student specializing in Cybersecurity, Ethical Hacking, Intrusion Detection, and Multi-Agent Cloud Optimization." />
-  
+  <meta name="description"
+    content="Professional portfolio of Karunakaran A, a final-year CS Engineering student specializing in Cybersecurity, Ethical Hacking, Intrusion Detection, and Multi-Agent Cloud Optimization." />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <style>
     /* ========== SYSTEM VARIABLES & DESIGN TOKENS (ORIGINAL SLATE CYAN/PURPLE) ========== */
@@ -19,7 +23,7 @@
       --card-bg: rgba(10, 25, 50, 0.45);
       --border-color: rgba(0, 210, 255, 0.15);
       --border-glow: rgba(0, 210, 255, 0.35);
-      
+
       /* Accent Colors */
       --cyan: #00d2ff;
       --purple: #a855f7;
@@ -27,12 +31,12 @@
       --pink: #ff2d78;
       --text-main: #f1f5f9;
       --text-muted: #94a3b8;
-      
+
       /* Typography */
       --font-display: 'Space Grotesk', sans-serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
-      
+
       /* Glow & Effects */
       --glow-cyan: 0 0 25px rgba(0, 210, 255, 0.35);
       --glow-purple: 0 0 25px rgba(168, 85, 247, 0.35);
@@ -41,12 +45,14 @@
     }
 
     /* ========== RESET & BASE STYLES ========== */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     html {
       scroll-behavior: smooth;
       background-color: var(--bg-dark);
@@ -71,14 +77,17 @@
     ::-webkit-scrollbar {
       width: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: var(--bg-dark);
     }
+
     ::-webkit-scrollbar-thumb {
       background: rgba(0, 210, 255, 0.15);
       border-radius: 4px;
       border: 2px solid var(--bg-dark);
     }
+
     ::-webkit-scrollbar-thumb:hover {
       background: rgba(0, 210, 255, 0.35);
     }
@@ -223,9 +232,11 @@
     .hamburger.active span:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger.active span:nth-child(2) {
       opacity: 0;
     }
+
     .hamburger.active span:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
@@ -435,9 +446,23 @@
       fill: currentColor;
     }
 
-    .btn-platform.github:hover { border-color: #fff; color: #fff; box-shadow: 0 0 15px rgba(255,255,255,0.1); }
-    .btn-platform.linkedin:hover { border-color: #0077b5; color: #0077b5; box-shadow: 0 0 15px rgba(0,119,181,0.2); }
-    .btn-platform.leetcode:hover { border-color: #f89f1b; color: #f89f1b; box-shadow: 0 0 15px rgba(248,159,27,0.2); }
+    .btn-platform.github:hover {
+      border-color: #fff;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-platform.linkedin:hover {
+      border-color: #0077b5;
+      color: #0077b5;
+      box-shadow: 0 0 15px rgba(0, 119, 181, 0.2);
+    }
+
+    .btn-platform.leetcode:hover {
+      border-color: #f89f1b;
+      color: #f89f1b;
+      box-shadow: 0 0 15px rgba(248, 159, 27, 0.2);
+    }
 
     .hero-stats {
       display: flex;
@@ -557,7 +582,9 @@
     }
 
     @keyframes spin {
-      100% { transform: rotate(360deg); }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .avatar-frame {
@@ -588,8 +615,15 @@
     }
 
     @keyframes scan {
-      0%, 100% { top: 0%; }
-      50% { top: 100%; }
+
+      0%,
+      100% {
+        top: 0%;
+      }
+
+      50% {
+        top: 100%;
+      }
     }
 
     .avatar-fallback {
@@ -1342,10 +1376,21 @@
       gap: 6px;
     }
 
-    .term-prompt { color: var(--cyan); }
-    .term-info { color: var(--text-muted); }
-    .term-success { color: var(--green); }
-    .term-warning { color: #fbbf24; }
+    .term-prompt {
+      color: var(--cyan);
+    }
+
+    .term-info {
+      color: var(--text-muted);
+    }
+
+    .term-success {
+      color: var(--green);
+    }
+
+    .term-warning {
+      color: #fbbf24;
+    }
 
     /* ========== FOOTER ========== */
     footer {
@@ -1366,13 +1411,29 @@
 
     /* ========== ANIMATIONS & RESPONSIVE ========== */
     @keyframes pulse {
-      0%, 100% { opacity: 0.6; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.15); }
+
+      0%,
+      100% {
+        opacity: 0.6;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
     }
 
     @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
 
     .reveal {
@@ -1392,26 +1453,63 @@
         text-align: center;
         gap: 30px;
       }
+
       .hero-content {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .hero-description { margin-left: auto; margin-right: auto; }
-      .hero-actions { align-items: center; }
-      .hero-buttons { justify-content: center; }
-      .hero-stats { justify-content: center; margin-left: auto; margin-right: auto; }
-      .hero-visuals { order: -1; height: 380px; }
-      .about-grid, .skills-layout, .timeline-layout, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
-      .about-quick-card { max-width: 500px; width: 100%; margin: 0 auto; }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-actions {
+        align-items: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-stats {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-visuals {
+        order: -1;
+        height: 380px;
+      }
+
+      .about-grid,
+      .skills-layout,
+      .timeline-layout,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .about-quick-card {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+      }
     }
 
     @media (max-width: 768px) {
-      header { padding: 20px 5%; }
+      header {
+        padding: 20px 5%;
+      }
+
       .nav-links {
         position: fixed;
-        top: 0; right: -100%;
-        width: 75%; height: 100vh;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
         background: rgba(3, 7, 18, 0.95);
         backdrop-filter: var(--glass-blur);
         -webkit-backdrop-filter: var(--glass-blur);
@@ -1422,14 +1520,30 @@
         gap: 40px;
         transition: right 0.4s ease;
       }
-      .nav-links.active { right: 0; }
-      .hamburger { display: flex; }
-      .nav-cta { display: none; }
-      .form-row { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- 3D INTERACTIVE ADVANCED NETWORK BACKGROUND -->
@@ -1441,7 +1555,7 @@
       <div class="logo-badge"></div>
       <div class="nav-logo">KARUNAKARAN A</div>
     </div>
-    
+
     <ul class="nav-menu nav-links" id="nav-menu">
       <li><a href="#hero">Connect</a></li>
       <li><a href="#about">Identity</a></li>
@@ -1465,55 +1579,61 @@
   <section id="hero">
     <div class="section-wrap">
       <div class="hero-grid">
-        
+
         <div class="hero-content">
           <div class="hero-eyebrow">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
             </svg>
             <span>SYSTEM_NODE: active_session</span>
           </div>
-          
+
           <h1 class="hero-title-main">
             Karunakaran <span>A</span>
           </h1>
-          
+
           <p class="hero-subtitle">
             <span id="typed-text"></span><span class="type-cursor">|</span>
           </p>
-          
+
           <p class="hero-description">
-            Final-year Computer Science Engineering student specializing in **Cybersecurity and Ethical Hacking**, with hands-on internship experience and practical exposure to network intrusion detection, threat analysis, and cloud automation projects.
+            Final-year Computer Science Engineering student specializing in **Cybersecurity and Ethical Hacking**, with
+            hands-on internship experience and practical exposure to network intrusion detection, threat analysis, and
+            cloud automation projects.
           </p>
-          
+
           <div class="hero-actions">
             <div class="hero-buttons">
               <a href="#projects" class="btn-main">Explore Intel</a>
               <button id="resume-btn" class="btn-secondary">Retrieve Resume</button>
             </div>
-            
+
             <div class="platforms-grid">
               <a href="https://github.com/karuna0733" target="_blank" class="btn-platform github">
                 <svg viewBox="0 0 24 24">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 <span>GitHub</span>
               </a>
               <a href="https://linkedin.com/in/karunakaran-a-88aaa82b9" target="_blank" class="btn-platform linkedin">
                 <svg viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
                 <span>LinkedIn</span>
               </a>
               <a href="https://leetcode.com/u/karunakaran_07/" target="_blank" class="btn-platform leetcode">
                 <svg viewBox="0 0 24 24">
-                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.411L7.11 5.826a1.374 1.374 0 0 0-.004 1.942L12.5 13.16a1.374 1.374 0 0 0 1.962-.008l5.416-5.416a1.374 1.374 0 0 0-.002-1.944L14.464.411A1.374 1.374 0 0 0 13.483 0zm.002 2.274L17.65 6.44l-4.167 4.167L9.317 6.44l4.168-4.166zM4.17 8.528A1.374 1.374 0 0 0 2.8 9.902V15.7a6.3 6.3 0 0 0 6.3 6.3h5.798a1.374 1.374 0 0 0 1.374-1.374v-1.73a1.374 1.374 0 0 0-1.374-1.374h-5.798A1.822 1.822 0 0 1 7.276 15.7v-5.798A1.374 1.374 0 0 0 5.902 8.53a1.374 1.374 0 0 0-1.732.002z"/>
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.411L7.11 5.826a1.374 1.374 0 0 0-.004 1.942L12.5 13.16a1.374 1.374 0 0 0 1.962-.008l5.416-5.416a1.374 1.374 0 0 0-.002-1.944L14.464.411A1.374 1.374 0 0 0 13.483 0zm.002 2.274L17.65 6.44l-4.167 4.167L9.317 6.44l4.168-4.166zM4.17 8.528A1.374 1.374 0 0 0 2.8 9.902V15.7a6.3 6.3 0 0 0 6.3 6.3h5.798a1.374 1.374 0 0 0 1.374-1.374v-1.73a1.374 1.374 0 0 0-1.374-1.374h-5.798A1.822 1.822 0 0 1 7.276 15.7v-5.798A1.374 1.374 0 0 0 5.902 8.53a1.374 1.374 0 0 0-1.732.002z" />
                 </svg>
                 <span>LeetCode</span>
               </a>
             </div>
           </div>
-          
+
           <div class="hero-stats">
             <div class="stat-box">
               <div class="stat-number">04</div>
@@ -1535,29 +1655,30 @@
           <div class="hero-canvas-container">
             <canvas id="hero-canvas"></canvas>
           </div>
-          
+
           <div class="profile-card-floating" id="profile-card">
             <div class="profile-glow"></div>
-            
+
             <div class="avatar-container">
               <div class="avatar-scanner-ring"></div>
               <div class="avatar-frame">
-                <img src="Karunakaran.jpg" alt="Karunakaran A Passport Image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <img src="Karunakaran.jpg" alt="Karunakaran A Passport Image"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <div class="avatar-fallback" style="display: none;">KA</div>
                 <div class="avatar-scanline"></div>
               </div>
             </div>
-            
+
             <div class="profile-info">
               <h3 class="profile-name">KARUNAKARAN A</h3>
               <p class="profile-role">Ethical Hacking Student</p>
-              
+
               <div class="profile-badges">
                 <span class="profile-badge">Network Security</span>
                 <span class="profile-badge secondary">LangGraph AI</span>
                 <span class="profile-badge">Linux Spec</span>
               </div>
-              
+
               <div class="status-indicator">
                 <span class="status-dot"></span>
                 <span>Active Threat Analyst Ecosystem</span>
@@ -1577,7 +1698,7 @@
         <span class="section-tag">01 // IDENTITY</span>
         <h2 class="section-title">About Me</h2>
       </div>
-      
+
       <div class="about-grid">
         <div class="about-quick-card glass-panel">
           <div class="quick-list">
@@ -1607,16 +1728,22 @@
             </div>
           </div>
         </div>
-        
+
         <div class="about-bio">
           <p>
-            I am a final-year <strong>Computer Science Engineering student</strong> at VSB College of Engineering and Technical Campus, Coimbatore. My academic training is deeply focused on exploring system vulnerability surfaces, network security principles, and robust scripts automation.
+            I am a final-year <strong>Computer Science Engineering student</strong> at VSB College of Engineering and
+            Technical Campus, Coimbatore. My academic training is deeply focused on exploring system vulnerability
+            surfaces, network security principles, and robust scripts automation.
           </p>
           <p>
-            With practical internship training at <strong>Hackup Technology Pvt Ltd</strong>, I performed hands-on ethical hacking exercises and vulnerability assessments under mentor guidance using industry-standard penetration testing methodologies.
+            With practical internship training at <strong>Hackup Technology Pvt Ltd</strong>, I performed hands-on
+            ethical hacking exercises and vulnerability assessments under mentor guidance using industry-standard
+            penetration testing methodologies.
           </p>
           <p>
-            I have also designed proactive defensive honeypots and engineered autonomous multi-agent systems powered by generative AI to optimize cloud topologies. I seek a full-time opportunity in <strong>Cybersecurity</strong> or <strong>Ethical Hacking</strong> to leverage my analytical skills and certifications.
+            I have also designed proactive defensive honeypots and engineered autonomous multi-agent systems powered by
+            generative AI to optimize cloud topologies. I seek a full-time opportunity in <strong>Cybersecurity</strong>
+            or <strong>Ethical Hacking</strong> to leverage my analytical skills and certifications.
           </p>
         </div>
       </div>
@@ -1632,14 +1759,17 @@
       </div>
 
       <div class="skills-layout">
-        
+
         <!-- Ratings Bars -->
         <div class="glass-panel" style="padding: 30px;">
           <div class="skill-block-title">
-            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 6c1.66 0 3 1.34 3 3 0 1.09-.59 2.05-1.47 2.58l1.19 3.59c.09.28-.11.58-.41.58H9.69c-.3 0-.5-.3-.41-.58l1.19-3.59C9.59 12.05 9 11.09 9 10c0-1.66 1.34-3 3-3zm0 2c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 6c1.66 0 3 1.34 3 3 0 1.09-.59 2.05-1.47 2.58l1.19 3.59c.09.28-.11.58-.41.58H9.69c-.3 0-.5-.3-.41-.58l1.19-3.59C9.59 12.05 9 11.09 9 10c0-1.66 1.34-3 3-3zm0 2c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z" />
+            </svg>
             <span>Core Matrices</span>
           </div>
-          
+
           <div class="skills-ratings">
             <div class="rating-item">
               <div class="rating-header">
@@ -1650,7 +1780,7 @@
                 <div class="rating-bar-fill" data-width="85"></div>
               </div>
             </div>
-            
+
             <div class="rating-item">
               <div class="rating-header">
                 <span class="rating-name">Network Intrusion Detection</span>
@@ -1687,63 +1817,101 @@
         <div class="skills-grid">
           <div>
             <div class="skill-block-title">
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm0 14H4V8h16v10zm-2-1H6v-2h12v2zm-4-3H6v-2h8v2z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm0 14H4V8h16v10zm-2-1H6v-2h12v2zm-4-3H6v-2h8v2z" />
+              </svg>
               <span>Technologies &amp; Tools</span>
             </div>
-            
+
             <div class="skills-tag-group">
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M12 .007c-.126 0-.25.01-.373.029C8.36 1.157 5.163 3.659 2.5 6.74v8c0 4.14 3.36 7.5 7.5 7.5 2.14 0 4.09-.9 5.5-2.35l-1.42-1.42A5.46 5.46 0 0 1 10 19.24c-2.76 0-5-2.24-5-5v-5.26c2.09-2.33 4.67-4.22 7.5-5.59 2.83 1.37 5.41 3.26 7.5 5.59v5.26c0 2.76-2.24 5-5 5-.6 0-1.17-.11-1.69-.3l-1.42 1.42A7.47 7.47 0 0 0 15 22.24c4.14 0 7.5-3.36 7.5-7.5v-8c-2.663-3.081-5.86-5.583-9.127-6.704-.123-.019-.247-.029-.373-.029z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 .007c-.126 0-.25.01-.373.029C8.36 1.157 5.163 3.659 2.5 6.74v8c0 4.14 3.36 7.5 7.5 7.5 2.14 0 4.09-.9 5.5-2.35l-1.42-1.42A5.46 5.46 0 0 1 10 19.24c-2.76 0-5-2.24-5-5v-5.26c2.09-2.33 4.67-4.22 7.5-5.59 2.83 1.37 5.41 3.26 7.5 5.59v5.26c0 2.76-2.24 5-5 5-.6 0-1.17-.11-1.69-.3l-1.42 1.42A7.47 7.47 0 0 0 15 22.24c4.14 0 7.5-3.36 7.5-7.5v-8c-2.663-3.081-5.86-5.583-9.127-6.704-.123-.019-.247-.029-.373-.029z" />
+                </svg>
                 <span>Kali Linux</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                </svg>
                 <span>Nmap</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M12.44 2.11L1.25 15.65c-.47.57-.15 1.43.59 1.54L11.5 18.5v3.39c0 .66.75 1.04 1.25.61l10-8.5c.48-.41.34-1.21-.25-1.4L13.5 10.5V3.36c0-.82-.75-1.33-1.06-1.25z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12.44 2.11L1.25 15.65c-.47.57-.15 1.43.59 1.54L11.5 18.5v3.39c0 .66.75 1.04 1.25.61l10-8.5c.48-.41.34-1.21-.25-1.4L13.5 10.5V3.36c0-.82-.75-1.33-1.06-1.25z" />
+                </svg>
                 <span>Wireshark</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15.92c-2.5.42-4.92-1.22-5.38-3.72-.46-2.5 1.05-4.88 3.52-5.46.12-.03.24-.04.36-.04V6l3.5 3.5L13 13v-3.32c-1.3.36-2.07 1.63-1.8 2.92.27 1.29 1.53 2.1 2.8 1.83.69-.15 1.27-.61 1.55-1.24l1.63.82c-.61 1.35-1.92 2.22-3.18 2.31z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15.92c-2.5.42-4.92-1.22-5.38-3.72-.46-2.5 1.05-4.88 3.52-5.46.12-.03.24-.04.36-.04V6l3.5 3.5L13 13v-3.32c-1.3.36-2.07 1.63-1.8 2.92.27 1.29 1.53 2.1 2.8 1.83.69-.15 1.27-.61 1.55-1.24l1.63.82c-.61 1.35-1.92 2.22-3.18 2.31z" />
+                </svg>
                 <span>Cowrie SSH</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M2.325 9.868l9.467-9.467c.39-.39 1.023-.39 1.414 0l9.466 9.467c.39.39.39 1.023 0 1.414l-9.467 9.467c-.39.39-1.023.39-1.414 0l-9.466-9.467c-.39-.39-.39-1.023 0-1.414zm9.324-2.831v4.301c-.347-.193-.746-.307-1.172-.307-1.356 0-2.454 1.099-2.454 2.454 0 1.355 1.098 2.453 2.454 2.453 1.332 0 2.414-1.062 2.451-2.388V8.98l2.253 2.253c.195.195.512.195.707 0l.707-.707c.195-.195.195-.512 0-.707l-3.879-3.879c-.292-.293-.768-.293-1.061 0l-1.01 1.01c-.195.195-.195.512 0 .707l.707.707c.195.195.512.195.707 0l1.246-1.246V9.45c-.347-.193-.746-.307-1.172-.307-1.356 0-2.454 1.099-2.454 2.454 0 1.355 1.098 2.453 2.454 2.453 1.332 0 2.414-1.062 2.451-2.388V7.037l-2.072-2.072c-.195-.195-.512-.195-.707 0l-.707.707c-.195.195-.195.512 0 .707L11.649 7.037z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M2.325 9.868l9.467-9.467c.39-.39 1.023-.39 1.414 0l9.466 9.467c.39.39.39 1.023 0 1.414l-9.467 9.467c-.39.39-1.023.39-1.414 0l-9.466-9.467c-.39-.39-.39-1.023 0-1.414zm9.324-2.831v4.301c-.347-.193-.746-.307-1.172-.307-1.356 0-2.454 1.099-2.454 2.454 0 1.355 1.098 2.453 2.454 2.453 1.332 0 2.414-1.062 2.451-2.388V8.98l2.253 2.253c.195.195.512.195.707 0l.707-.707c.195-.195.195-.512 0-.707l-3.879-3.879c-.292-.293-.768-.293-1.061 0l-1.01 1.01c-.195.195-.195.512 0 .707l.707.707c.195.195.512.195.707 0l1.246-1.246V9.45c-.347-.193-.746-.307-1.172-.307-1.356 0-2.454 1.099-2.454 2.454 0 1.355 1.098 2.453 2.454 2.453 1.332 0 2.414-1.062 2.451-2.388V7.037l-2.072-2.072c-.195-.195-.512-.195-.707 0l-.707.707c-.195.195-.195.512 0 .707L11.649 7.037z" />
+                </svg>
                 <span>Git &amp; GitHub</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M23.985 6.809l-2.435-1.921c-.439-.344-1.06-.217-1.344.275l-4.708 7.837-3.86-3.86 8.358-8.358c.39-.39.39-1.024 0-1.414l-.707-.707c-.39-.39-1.024-.39-1.414 0L7.159 9.387 2.45 4.678c-.39-.39-1.024-.39-1.414 0L.328 5.385c-.39.39-.39 1.024 0 1.414l5.414 5.414-5.414 5.414c-.39.39-.39 1.024 0 1.414l.707.707c.39.39 1.024.39 1.414 0l4.708-4.708 3.86 3.86-8.358 8.358c-.39.39-.39 1.024 0 1.414l.707.707c.39.39 1.024.39 1.414 0l10.728-10.728 4.708 4.708c.39.39 1.024.39 1.414 0l2.436-2.436c.39-.39.39-1.024 0-1.414l-4.708-4.708 4.708-7.837c.284-.492.162-1.12-.277-1.464z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M23.985 6.809l-2.435-1.921c-.439-.344-1.06-.217-1.344.275l-4.708 7.837-3.86-3.86 8.358-8.358c.39-.39.39-1.024 0-1.414l-.707-.707c-.39-.39-1.024-.39-1.414 0L7.159 9.387 2.45 4.678c-.39-.39-1.024-.39-1.414 0L.328 5.385c-.39.39-.39 1.024 0 1.414l5.414 5.414-5.414 5.414c-.39.39-.39 1.024 0 1.414l.707.707c.39.39 1.024.39 1.414 0l4.708-4.708 3.86 3.86-8.358 8.358c-.39.39-.39 1.024 0 1.414l.707.707c.39.39 1.024.39 1.414 0l10.728-10.728 4.708 4.708c.39.39 1.024.39 1.414 0l2.436-2.436c.39-.39.39-1.024 0-1.414l-4.708-4.708 4.708-7.837c.284-.492.162-1.12-.277-1.464z" />
+                </svg>
                 <span>VS Code</span>
               </span>
             </div>
           </div>
-          
+
           <div style="margin-top: 10px;">
             <div class="skill-block-title">
-              <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+              </svg>
               <span>Programming Languages</span>
             </div>
-            
+
             <div class="skills-tag-group">
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M14.25.18c-.9 0-1.66.72-1.66 1.66v2.91h-5c-.9 0-1.66.72-1.66 1.66v1.25h1.25c.69 0 1.25.56 1.25 1.25v2.5c0 .69-.56 1.25-1.25 1.25H2.18c-.9 0-1.66.72-1.66 1.66v5.82c0 .9.72 1.66 1.66 1.66h5c.9 0 1.66-.72 1.66-1.66V18h-1.25c-.69 0-1.25-.56-1.25-1.25v-2.5c0-.69.56-1.25 1.25-1.25h5c.9 0 1.66-.72 1.66-1.66v-2.91h5c.9 0 1.66-.72 1.66-1.66V5.5c0-.9-.72-1.66-1.66-1.66h-5V5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25V5.5c0 .69.56 1.25 1.25 1.25h5c.9 0 1.66-.72 1.66-1.66V1.84c0-.9-.72-1.66-1.66-1.66h-5z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14.25.18c-.9 0-1.66.72-1.66 1.66v2.91h-5c-.9 0-1.66.72-1.66 1.66v1.25h1.25c.69 0 1.25.56 1.25 1.25v2.5c0 .69-.56 1.25-1.25 1.25H2.18c-.9 0-1.66.72-1.66 1.66v5.82c0 .9.72 1.66 1.66 1.66h5c.9 0 1.66-.72 1.66-1.66V18h-1.25c-.69 0-1.25-.56-1.25-1.25v-2.5c0-.69.56-1.25 1.25-1.25h5c.9 0 1.66-.72 1.66-1.66v-2.91h5c.9 0 1.66-.72 1.66-1.66V5.5c0-.9-.72-1.66-1.66-1.66h-5V5c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25V5.5c0 .69.56 1.25 1.25 1.25h5c.9 0 1.66-.72 1.66-1.66V1.84c0-.9-.72-1.66-1.66-1.66h-5z" />
+                </svg>
                 <span>Python</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M14.8 19.38c.06-.06.12-.12.18-.18-.36-.06-.72-.12-1.08-.18.3.18.6.36.9.36zm1.6-4.5c.12-.36.24-.72.36-1.08.36.72.72 1.44 1.08 2.16-.48-.36-.96-.72-1.44-1.08zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.14 17.07c-2.31 0-3.32-1.01-4-2 .36.06.72.12 1.08.18 1.2-.6 2.4-1.2 3.6-1.8.48.36.96.72 1.44 1.08-1.2.6-2.4 1.2-3.6 1.8.48.36.96.72 1.44 1.08-1.2.6-2.4 1.2-3.6 1.8-.48.36-.96.72-1.44 1.08 1.2-.6 2.4-1.2 3.6-1.8-1.2.6-2.4 1.2-3.6 1.8-.48-.36-.96-.72-1.44-1.08 2.31 0 3.32 1.01 4 2zm2.66-6.47c-1.2 0-2.4-.6-3.6-1.2 1.2-.6 2.4-1.2 3.6-1.8-.48.36-.96.72-1.44 1.08.48-.36.96-.72 1.44-1.08-1.2.6-2.4 1.2-3.6 1.8 1.2-.6 2.4-1.2 3.6-1.8-.48-.36-.96-.72-1.44-1.08 1.2.6 2.4 1.2 3.6 1.8-1.2-.6-2.4-1.2-3.6-1.8 1.2.6 2.4 1.2 3.6 1.8z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M14.8 19.38c.06-.06.12-.12.18-.18-.36-.06-.72-.12-1.08-.18.3.18.6.36.9.36zm1.6-4.5c.12-.36.24-.72.36-1.08.36.72.72 1.44 1.08 2.16-.48-.36-.96-.72-1.44-1.08zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.14 17.07c-2.31 0-3.32-1.01-4-2 .36.06.72.12 1.08.18 1.2-.6 2.4-1.2 3.6-1.8.48.36.96.72 1.44 1.08-1.2.6-2.4 1.2-3.6 1.8.48.36.96.72 1.44 1.08-1.2.6-2.4 1.2-3.6 1.8-.48.36-.96.72-1.44 1.08 1.2-.6 2.4-1.2 3.6-1.8-1.2.6-2.4 1.2-3.6 1.8-.48-.36-.96-.72-1.44-1.08 2.31 0 3.32 1.01 4 2zm2.66-6.47c-1.2 0-2.4-.6-3.6-1.2 1.2-.6 2.4-1.2 3.6-1.8-.48.36-.96.72-1.44 1.08.48-.36.96-.72 1.44-1.08-1.2.6-2.4 1.2-3.6 1.8 1.2-.6 2.4-1.2 3.6-1.8-.48-.36-.96-.72-1.44-1.08 1.2.6 2.4 1.2 3.6 1.8-1.2-.6-2.4-1.2-3.6-1.8 1.2.6 2.4 1.2 3.6 1.8z" />
+                </svg>
                 <span>Java</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 4.02 2 6.5v11c0 2.48 4.48 4.5 10 4.5s10-2.02 10-4.5v-11C22 4.02 17.52 2 12 2zm0 3c4.97 0 8 1.79 8 2.5S16.97 10 12 10s-8-1.79-8-2.5S7.03 5 12 5zm8 6.5c0 .71-3.03 2.5-8 2.5s-8-1.79-8-2.5V8.83c1.9 1.3 5.06 2.17 8 2.17s6.1-1.12 8-2.17v2.67zm0 4.5c0 .71-3.03 2.5-8 2.5s-8-1.79-8-2.5v-2.67c1.9 1.3 5.06 2.17 8 2.17s6.1-1.12 8-2.17V16z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 4.02 2 6.5v11c0 2.48 4.48 4.5 10 4.5s10-2.02 10-4.5v-11C22 4.02 17.52 2 12 2zm0 3c4.97 0 8 1.79 8 2.5S16.97 10 12 10s-8-1.79-8-2.5S7.03 5 12 5zm8 6.5c0 .71-3.03 2.5-8 2.5s-8-1.79-8-2.5V8.83c1.9 1.3 5.06 2.17 8 2.17s6.1-1.12 8-2.17v2.67zm0 4.5c0 .71-3.03 2.5-8 2.5s-8-1.79-8-2.5v-2.67c1.9 1.3 5.06 2.17 8 2.17s6.1-1.12 8-2.17V16z" />
+                </svg>
                 <span>SQL</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M1.5 0h21l-1.91 21.56L12 24l-8.59-2.44L1.5 0zm17 5H5.5l.33 3.5h11.96l-.37 4.13L12 14.2l-5.42-1.57-.27-3.13H2.8l.53 6.13L12 18.2l8.67-2.57L21.5 5h-3z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M1.5 0h21l-1.91 21.56L12 24l-8.59-2.44L1.5 0zm17 5H5.5l.33 3.5h11.96l-.37 4.13L12 14.2l-5.42-1.57-.27-3.13H2.8l.53 6.13L12 18.2l8.67-2.57L21.5 5h-3z" />
+                </svg>
                 <span>HTML</span>
               </span>
               <span class="tech-logo-tag">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14L9 14.5l3.5-3.5L9 7.5 10.5 6l5 5-5 5z"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14L9 14.5l3.5-3.5L9 7.5 10.5 6l5 5-5 5z" />
+                </svg>
                 <span>Windows / PowerShell</span>
               </span>
             </div>
@@ -1825,12 +1993,15 @@
             <span class="project-sub">Threat Infrastructure Capture</span>
             <h3 class="project-title">Advanced Honeypot-Based Intrusion Detection System</h3>
           </div>
-          
+
           <div class="project-body">
             <p class="project-desc">
-              Designed and deployed a Cowrie-based SSH honeypot on Kali Linux to detect, monitor, and log malicious network activity, capturing real attacker behavior to identify common attack patterns; resolved production-grade setup issues including environment conflicts, configuration errors, and privilege separation.
+              Designed and deployed a Cowrie-based SSH honeypot on Kali Linux to detect, monitor, and log malicious
+              network activity, capturing real attacker behavior to identify common attack patterns; resolved
+              production-grade setup issues including environment conflicts, configuration errors, and privilege
+              separation.
             </p>
-            
+
             <div class="project-tech">
               <span class="project-tag">Cowrie</span>
               <span class="project-tag">SSH Honeypot</span>
@@ -1838,10 +2009,12 @@
               <span class="project-tag">Python</span>
               <span class="project-tag">Threat Logging</span>
             </div>
-            
+
             <button class="project-cta" onclick="openTerminal('honeypot')">
               <span>Initialize Interactive Simulation</span>
-              <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+              </svg>
             </button>
           </div>
         </div>
@@ -1852,12 +2025,15 @@
             <span class="project-sub">Multi-Agent AI &amp; Cloud Telemetry</span>
             <h3 class="project-title">Autonomous Multi-Agent FinOps &amp; Cloud Optimizer</h3>
           </div>
-          
+
           <div class="project-body">
             <p class="project-desc">
-              Built a self-correcting multi-agent pipeline using LangGraph that detects underutilized cloud infrastructure across 50 simulated microservices and proposes cost-saving resizes via a local LLM, backed by a Pydantic hallucination guardrail; streamed telemetry through Kafka-compatible Redpanda and TimescaleDB, converting changes into CDKTF stacks.
+              Built a self-correcting multi-agent pipeline using LangGraph that detects underutilized cloud
+              infrastructure across 50 simulated microservices and proposes cost-saving resizes via a local LLM, backed
+              by a Pydantic hallucination guardrail; streamed telemetry through Kafka-compatible Redpanda and
+              TimescaleDB, converting changes into CDKTF stacks.
             </p>
-            
+
             <div class="project-tech">
               <span class="project-tag">LangGraph</span>
               <span class="project-tag">Local LLM</span>
@@ -1866,10 +2042,12 @@
               <span class="project-tag">CDKTF</span>
               <span class="project-tag">Streamlit</span>
             </div>
-            
+
             <button class="project-cta" onclick="openTerminal('finops')">
               <span>Initialize Interactive Simulation</span>
-              <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+              </svg>
             </button>
           </div>
         </div>
@@ -1889,10 +2067,13 @@
         <!-- Experience -->
         <div>
           <div class="skill-block-title" style="color: var(--cyan); margin-bottom: 30px;">
-            <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+            </svg>
             <span>Practical Experience</span>
           </div>
-          
+
           <div class="timeline-container">
             <div class="timeline-item">
               <div class="timeline-header">
@@ -1901,7 +2082,10 @@
                 <span class="timeline-time">Jan 2026 – Feb 2026</span>
               </div>
               <p class="timeline-desc">
-                Performed hands-on ethical hacking exercises and vulnerability assessments under mentor guidance using industry-standard penetration testing methodologies, strengthening practical skills in network security, threat identification, and incident analysis that directly shaped the design of a later intrusion-detection project.
+                Performed hands-on ethical hacking exercises and vulnerability assessments under mentor guidance using
+                industry-standard penetration testing methodologies, strengthening practical skills in network security,
+                threat identification, and incident analysis that directly shaped the design of a later
+                intrusion-detection project.
               </p>
             </div>
           </div>
@@ -1910,10 +2094,13 @@
         <!-- Education -->
         <div>
           <div class="skill-block-title" style="color: var(--purple); margin-bottom: 30px;">
-            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.89 12.55L12 15.88l6.11-3.33v2.32c0 2.3-3.61 3.13-6.11 3.13-2.5 0-6.11-.83-6.11-3.13v-2.32z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.89 12.55L12 15.88l6.11-3.33v2.32c0 2.3-3.61 3.13-6.11 3.13-2.5 0-6.11-.83-6.11-3.13v-2.32z" />
+            </svg>
             <span>Academic Milestones</span>
           </div>
-          
+
           <div class="timeline-container">
             <div class="timeline-item">
               <div class="timeline-header">
@@ -1922,10 +2109,11 @@
                 <span class="timeline-time">2023 – 2027</span>
               </div>
               <p class="timeline-desc">
-                Focusing on core Computer Science Engineering studies, algorithms, database systems, and networking security modules. Currently maintaining a cumulative **CGPA of 7.8 / 10**.
+                Focusing on core Computer Science Engineering studies, algorithms, database systems, and networking
+                security modules. Currently maintaining a cumulative **CGPA of 7.8 / 10**.
               </p>
             </div>
-            
+
             <div class="timeline-item">
               <div class="timeline-header">
                 <h3 class="timeline-role">Higher Secondary School Education</h3>
@@ -1933,7 +2121,8 @@
                 <span class="timeline-time">2022 – 2023</span>
               </div>
               <p class="timeline-desc">
-                Completed Vocational Higher Secondary curriculum specializing in **Basic Automobile Engineering**, securing an overall score of **78.5%**.
+                Completed Vocational Higher Secondary curriculum specializing in **Basic Automobile Engineering**,
+                securing an overall score of **78.5%**.
               </p>
             </div>
           </div>
@@ -1954,17 +2143,24 @@
         <div class="contact-info">
           <div class="contact-card glass-panel">
             <div class="contact-icon-frame">
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
             </div>
             <div class="contact-details">
               <span class="contact-label">Mail Routing Route</span>
-              <a href="mailto:karunakarana284@gmail.com" class="contact-value" style="color: var(--cyan);">karunakarana284@gmail.com</a>
+              <a href="mailto:karunakarana284@gmail.com" class="contact-value"
+                style="color: var(--cyan);">karunakarana284@gmail.com</a>
             </div>
           </div>
 
           <div class="contact-card glass-panel">
             <div class="contact-icon-frame">
-              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
             </div>
             <div class="contact-details">
               <span class="contact-label">Telephony Line</span>
@@ -1974,7 +2170,10 @@
 
           <div class="contact-card glass-panel">
             <div class="contact-icon-frame">
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
             </div>
             <div class="contact-details">
               <span class="contact-label">Geographic Location</span>
@@ -1995,16 +2194,17 @@
                 <input type="email" class="form-input-control" placeholder="name@domain.com" required />
               </div>
             </div>
-            
+
             <div class="form-group">
               <label class="form-label">Transmission Block Data</label>
-              <textarea class="form-input-control" placeholder="Write your transmission message here..." required></textarea>
+              <textarea class="form-input-control" placeholder="Write your transmission message here..."
+                required></textarea>
             </div>
-            
+
             <button type="submit" class="btn-submit" id="submit-btn">
               <span>Initialize Handshake</span>
               <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg>
             </button>
           </form>
@@ -2129,7 +2329,7 @@
       // Gentle parallax rotation
       networkLines.rotation.y = time * 0.02 + clientMouseX * 0.05;
       networkNodes.rotation.y = time * 0.02 + clientMouseX * 0.05;
-      
+
       bgCamera.position.x += (clientMouseX * 3.5 - bgCamera.position.x) * 0.05;
       bgCamera.position.y += (clientMouseY * 3.5 + 8 - bgCamera.position.y) * 0.05;
       bgCamera.lookAt(0, 0, 0);
@@ -2267,7 +2467,7 @@
       const rect = profileCard.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      
+
       const threshold = 180;
       if (Math.abs(x) < rect.width + threshold && Math.abs(y) < rect.height + threshold) {
         profileCard.style.transform = `perspective(1000px) rotateX(${-y / 15}deg) rotateY(${x / 15}deg) translateY(-5px)`;
@@ -2290,7 +2490,7 @@
 
     function runTypingLoop() {
       const currentString = phrasesList[currentPhraseIdx];
-      
+
       if (!isDeletingPhrase) {
         typedTextElement.textContent = '> ' + currentString.slice(0, ++currentCharIdx);
         if (currentCharIdx === currentString.length) {
@@ -2380,7 +2580,7 @@
         if (lineIndex < logs.length) {
           const log = logs[lineIndex];
           const div = document.createElement('div');
-          
+
           if (log.type === 'prompt') {
             div.className = 'term-prompt';
           } else if (log.type === 'success') {
@@ -2390,11 +2590,11 @@
           } else {
             div.className = 'term-info';
           }
-          
+
           div.textContent = log.text;
           terminalScreen.appendChild(div);
           terminalScreen.scrollTop = terminalScreen.scrollHeight;
-          
+
           lineIndex++;
           logTimer = setTimeout(renderNextLine, 800);
         }
@@ -2423,7 +2623,7 @@
 
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       const originalText = submitBtn.querySelector('span').textContent;
       submitBtn.querySelector('span').textContent = 'Authorizing Gateway...';
       submitBtn.style.pointerEvents = 'none';
@@ -2433,7 +2633,7 @@
         submitBtn.querySelector('span').textContent = 'Handshake Complete ✓';
         submitBtn.style.background = 'linear-gradient(135deg, #00ff88, #00d2ff)';
         submitBtn.style.boxShadow = '0 0 15px rgba(0, 255, 136, 0.4)';
-        
+
         setTimeout(() => {
           submitBtn.querySelector('span').textContent = originalText;
           submitBtn.style.pointerEvents = 'auto';
@@ -2446,4 +2646,5 @@
     });
   </script>
 </body>
+
 </html>
