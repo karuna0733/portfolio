@@ -515,91 +515,124 @@
       height: 100%;
     }
 
-    .profile-card-floating {
-      position: absolute;
+    /* ==========================================================================
+       ROUND SOLAR SYSTEM PROFILE CORE DESIGN
+       ========================================================================== */
+    .solar-profile-system {
+      position: relative;
       z-index: 2;
-      width: 320px;
-      padding: 24px;
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      background: rgba(10, 25, 50, 0.65);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
-      transform-style: preserve-3d;
-      transition: transform 0.2s cubic-bezier(0.2, 1, 0.2, 1);
-      box-shadow: 0 20px 40px rgba(3, 7, 18, 0.5);
-    }
-
-    .profile-card-floating:hover {
-      border-color: var(--cyan);
-      box-shadow: 0 25px 50px rgba(0, 210, 255, 0.25);
-    }
-
-    .profile-glow {
-      position: absolute;
-      inset: -1px;
-      background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
-      border-radius: 17px;
-      z-index: -1;
-      filter: blur(12px);
-      opacity: 0.35;
-      transition: var(--transition-base);
-    }
-
-    .profile-card-floating:hover .profile-glow {
-      opacity: 0.6;
-      filter: blur(15px);
-    }
-
-    .avatar-container {
-      width: 154px;
-      height: 154px;
-      background: linear-gradient(135deg, var(--cyan), var(--purple), var(--pink));
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      margin: 0 auto 24px;
+      width: 420px;
+      height: 480px;
+      margin: 0 auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    /* Orbital Circles */
+    .solar-orbit {
+      position: absolute;
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
       transition: var(--transition-base);
     }
 
-    .profile-card-floating:hover .avatar-container {
-      transform: scale(1.04);
-      background: linear-gradient(135deg, var(--green), var(--cyan), var(--purple));
+    .solar-orbit.orbit-1 {
+      width: 220px;
+      height: 220px;
+      border: 1px dashed rgba(0, 210, 255, 0.35);
+      animation: spin 25s linear infinite;
+      box-shadow: inset 0 0 15px rgba(0, 210, 255, 0.1);
     }
 
-    .avatar-scanner-ring {
-      position: absolute;
-      width: 174px;
-      height: 174px;
-      border: 1px dashed var(--cyan);
-      border-radius: 50%;
-      animation: spin 15s linear infinite;
-      pointer-events: none;
-      opacity: 0.5;
-      box-shadow: 0 0 10px rgba(0, 210, 255, 0.15);
+    .solar-orbit.orbit-2 {
+      width: 310px;
+      height: 310px;
+      border: 1px dashed rgba(168, 85, 247, 0.3);
+      animation: spin-reverse 40s linear infinite;
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.1);
     }
 
-    @keyframes spin {
+    .solar-orbit.orbit-3 {
+      width: 390px;
+      height: 390px;
+      border: 1px solid rgba(0, 255, 136, 0.2);
+      animation: spin 60s linear infinite;
+    }
+
+    @keyframes spin-reverse {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
       100% {
-        transform: rotate(360deg);
+        transform: translate(-50%, -50%) rotate(-360deg);
       }
     }
 
-    .avatar-frame {
-      width: 148px;
-      height: 148px;
-      background: var(--bg-slate);
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    /* Central Sun Core Avatar */
+    .solar-core {
       position: relative;
-      overflow: hidden;
+      width: 160px;
+      height: 160px;
+      margin-bottom: 25px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .avatar-frame img {
+    .solar-aura {
+      position: absolute;
+      inset: -12px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 210, 255, 0.4) 0%, rgba(168, 85, 247, 0.3) 50%, transparent 70%);
+      filter: blur(15px);
+      animation: solar-pulse 4s ease-in-out infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes solar-pulse {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1.1);
+        opacity: 0.85;
+      }
+    }
+
+    .solar-avatar-frame {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid var(--cyan);
+      box-shadow: 0 0 30px rgba(0, 210, 255, 0.5), inset 0 0 15px rgba(0, 210, 255, 0.3);
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-slate);
+      transition: var(--transition-base);
+    }
+
+    .solar-profile-system:hover .solar-avatar-frame {
+      border-color: var(--green);
+      box-shadow: 0 0 40px rgba(0, 255, 136, 0.7), inset 0 0 20px rgba(0, 255, 136, 0.4);
+      transform: scale(1.03);
+    }
+
+    .solar-avatar-frame img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      display: block;
     }
 
     .avatar-scanline {
@@ -615,15 +648,8 @@
     }
 
     @keyframes scan {
-
-      0%,
-      100% {
-        top: 0%;
-      }
-
-      50% {
-        top: 100%;
-      }
+      0%, 100% { top: 0%; }
+      50% { top: 100%; }
     }
 
     .avatar-fallback {
@@ -635,6 +661,110 @@
       background: #0f172a;
       color: var(--cyan);
       font-size: 2.5rem;
+      font-weight: 700;
+      font-family: var(--font-display);
+      border-radius: 50%;
+    }
+
+    /* Orbiting Skill Planet Badges */
+    .planet-node {
+      position: absolute;
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: rgba(11, 19, 41, 0.85);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      box-shadow: 0 8px 20px rgba(3, 7, 18, 0.6);
+      transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .planet-node:hover {
+      transform: scale(1.15) translateY(-3px) !important;
+      border-color: var(--cyan);
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+      color: var(--cyan);
+    }
+
+    .planet-icon {
+      font-size: 0.85rem;
+    }
+
+    /* Positions for Orbiting Planets around the central solar core */
+    .planet-1 {
+      top: 15px;
+      left: 15px;
+      border-color: rgba(0, 210, 255, 0.4);
+      animation: float-planet 6s ease-in-out infinite alternate;
+    }
+
+    .planet-2 {
+      top: 25px;
+      right: 10px;
+      border-color: rgba(168, 85, 247, 0.4);
+      animation: float-planet 7s ease-in-out infinite alternate-reverse;
+    }
+
+    .planet-3 {
+      top: 175px;
+      left: -25px;
+      border-color: rgba(0, 255, 136, 0.4);
+      animation: float-planet 8s ease-in-out infinite alternate;
+    }
+
+    .planet-4 {
+      top: 185px;
+      right: -30px;
+      border-color: rgba(255, 45, 120, 0.4);
+      animation: float-planet 5s ease-in-out infinite alternate-reverse;
+    }
+
+    .planet-5 {
+      top: 310px;
+      left: 30px;
+      border-color: rgba(0, 210, 255, 0.4);
+      animation: float-planet 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes float-planet {
+      0% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-8px) rotate(1deg);
+      }
+    }
+
+    /* Solar System Bottom Info Capsule */
+    .solar-info {
+      position: relative;
+      z-index: 6;
+      text-align: center;
+      padding: 14px 24px;
+      background: rgba(10, 25, 50, 0.75);
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      box-shadow: 0 10px 30px rgba(3, 7, 18, 0.6);
+      width: 90%;
+      max-width: 320px;
+      transition: var(--transition-base);
+    }
+
+    .solar-profile-system:hover .solar-info {
+      border-color: var(--cyan);
+      box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
     }
 
     .profile-info {
@@ -1656,12 +1786,38 @@
             <canvas id="hero-canvas"></canvas>
           </div>
 
-          <div class="profile-card-floating" id="profile-card">
-            <div class="profile-glow"></div>
+          <div class="solar-profile-system" id="profile-card">
+            <!-- Orbital Rings -->
+            <div class="solar-orbit orbit-1"></div>
+            <div class="solar-orbit orbit-2"></div>
+            <div class="solar-orbit orbit-3"></div>
 
-            <div class="avatar-container">
-              <div class="avatar-scanner-ring"></div>
-              <div class="avatar-frame">
+            <!-- Orbiting Skill Planets -->
+            <div class="planet-node planet-1" title="Network Security">
+              <span class="planet-icon">🛡️</span>
+              <span class="planet-label">Network Security</span>
+            </div>
+            <div class="planet-node planet-2" title="LangGraph AI">
+              <span class="planet-icon">🤖</span>
+              <span class="planet-label">LangGraph AI</span>
+            </div>
+            <div class="planet-node planet-3" title="Linux Spec">
+              <span class="planet-icon">🐧</span>
+              <span class="planet-label">Linux Spec</span>
+            </div>
+            <div class="planet-node planet-4" title="Ethical Hacking">
+              <span class="planet-icon">⚡</span>
+              <span class="planet-label">Ethical Hacking</span>
+            </div>
+            <div class="planet-node planet-5" title="Threat Analysis">
+              <span class="planet-icon">🔍</span>
+              <span class="planet-label">Threat Analysis</span>
+            </div>
+
+            <!-- Central Sun Core Avatar -->
+            <div class="solar-core">
+              <div class="solar-aura"></div>
+              <div class="solar-avatar-frame">
                 <img src="Karunakaran.jpg" alt="Karunakaran A Passport Image"
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <div class="avatar-fallback" style="display: none;">KA</div>
@@ -1669,16 +1825,10 @@
               </div>
             </div>
 
-            <div class="profile-info">
+            <!-- Solar System Bottom Info Capsule -->
+            <div class="solar-info">
               <h3 class="profile-name">KARUNAKARAN A</h3>
               <p class="profile-role">Ethical Hacking Student</p>
-
-              <div class="profile-badges">
-                <span class="profile-badge">Network Security</span>
-                <span class="profile-badge secondary">LangGraph AI</span>
-                <span class="profile-badge">Linux Spec</span>
-              </div>
-
               <div class="status-indicator">
                 <span class="status-dot"></span>
                 <span>Active Threat Analyst Ecosystem</span>
